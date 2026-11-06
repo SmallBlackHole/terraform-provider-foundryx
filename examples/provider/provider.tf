@@ -1,0 +1,24 @@
+terraform {
+  required_version = ">= 1.7"
+  required_providers {
+    foundryx = {
+      source  = "registry.terraform.io/smallblackhole/foundryx"
+      version = "0.0.1"
+    }
+  }
+}
+
+provider "foundryx" {
+  endpoint  = var.your-endpoint
+  tenant_id = var.your-tenant-id
+}
+
+variable "your-endpoint" {
+  type        = string
+  description = "Approved FoundryX API HTTPS origin."
+}
+
+variable "your-tenant-id" {
+  type        = string
+  description = "Tenant UUID matching the signed-in CLI session or explicit delegated token."
+}
