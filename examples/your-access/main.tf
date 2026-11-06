@@ -3,19 +3,15 @@ terraform {
   required_providers {
     foundryx = {
       source  = "registry.terraform.io/smallblackhole/foundryx"
-      version = "0.0.1"
+      version = "0.0.2"
     }
   }
 }
 
 provider "foundryx" {
-  endpoint  = var.your-endpoint
   tenant_id = var.your-tenant-id
 }
 
-variable "your-endpoint" {
-  type = string
-}
 variable "your-tenant-id" {
   type = string
 }
