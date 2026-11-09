@@ -3,7 +3,7 @@ terraform {
   required_providers {
     foundryx = {
       source  = "registry.terraform.io/smallblackhole/foundryx"
-      version = "0.0.2"
+      version = "0.0.3"
     }
   }
 }
