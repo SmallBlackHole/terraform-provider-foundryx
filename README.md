@@ -9,7 +9,7 @@ terraform {
   required_providers {
     foundryx = {
       source  = "smallblackhole/foundryx"
-      version = "0.0.4"
+      version = "0.0.5"
     }
   }
 }
@@ -18,4 +18,4 @@ terraform {
 Run `terraform init` after the version has been published to the Terraform Registry.
 The FoundryX CLI is a separate authentication prerequisite; it is not bundled.
 
-See [provider configuration and authentication](docs/index.md) and [a complete access example](examples/all-in-one/main.tf).
+See [provider configuration and authentication](docs/index.md), [the existing project access example](examples/existing-project-access/README.md), and [the complete access example](examples/all-in-one/main.tf).
